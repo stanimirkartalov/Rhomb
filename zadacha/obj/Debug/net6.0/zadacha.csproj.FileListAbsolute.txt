@@ -1,0 +1,15 @@
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/zadacha.csproj.AssemblyReference.cache
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/zadacha.GeneratedMSBuildEditorConfig.editorconfig
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/zadacha.AssemblyInfoInputs.cache
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/zadacha.AssemblyInfo.cs
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/zadacha.csproj.CoreCompileInputs.cache
+/Users/miro/Projects/zadacha/zadacha/bin/Debug/net6.0/zadacha
+/Users/miro/Projects/zadacha/zadacha/bin/Debug/net6.0/zadacha.deps.json
+/Users/miro/Projects/zadacha/zadacha/bin/Debug/net6.0/zadacha.runtimeconfig.json
+/Users/miro/Projects/zadacha/zadacha/bin/Debug/net6.0/zadacha.dll
+/Users/miro/Projects/zadacha/zadacha/bin/Debug/net6.0/zadacha.pdb
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/zadacha.dll
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/refint/zadacha.dll
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/zadacha.pdb
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/zadacha.genruntimeconfig.cache
+/Users/miro/Projects/zadacha/zadacha/obj/Debug/net6.0/ref/zadacha.dll
