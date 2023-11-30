@@ -1,78 +1,4 @@
-﻿/*
-using System;
-//using Internal;
-
-namespace Rhomb;
-
-class Program
-{
-    static void Main(string[] arg)
-    {
-
-        Console.Write("Enter a value: ");
-        string num = Console.ReadLine();
-        int n = int.Parse(num);
-        if (n % 2 == 0 & n >= 6 & n <= 80)
-        {
-            int midY = (n / 2) - 1;
-            int midX = (n / 2) - 1;
-            int i = midY + 1;
-            // Console.WriteLine(n);
-            int counterX = 0;
-            do
-            {
-                int counterY = 0;
-
-                do
-                {
-                    Console.Write(".");
-
-                    counterY++;
-                } while (counterY < midY);
-                do
-                {
-                    Console.Write("/");
-                    counterY++;
-                } while (counterY <= midY);
-
-                int counterS = midY + 2;
-                while (counterS <= counterS + 2 & counterS < n - midY)
-                {
-
-                    Console.Write(" ");
-                    counterS++;
-                }
-                Console.Write("\\");
-
-
-
-                counterY = midY + 2;
-                do
-                {
-                    Console.Write(".");
-                    counterY++;
-
-                } while (counterY <= n);
-
-                    midY--;
-                 Console.WriteLine("");
-                counterX++;
-            } while (counterX < midX);
-
-        }
-
-        else
-        {
-            Console.WriteLine("Invalid value!");
-        }
-
-        Console.ReadLine();
-    }
-
-
-}
-*/
-using System;
+﻿using System;
 using System.Diagnostics.Metrics;
 
 namespace Rhomb
@@ -91,7 +17,7 @@ namespace Rhomb
                 //value is valid
                 int midY = (n / 2) - 1;
                 int midX = (n / 2) - 1;
-                //  int i = midY + 1;
+                
                 Console.WriteLine(n);
                 int counterX = 0;
 
@@ -99,7 +25,7 @@ namespace Rhomb
                 do
                 {
                     //write dots on left
-                    int counterY = 0; //todo - rename to cursor; must add 1 on each written symbol
+                    int counterY = 0; 
                     do
                     {
                         Console.Write(".");
@@ -168,7 +94,7 @@ namespace Rhomb
                 do
                 {
                     // test
-                    int counterYD = 0; //todo - rename to cursor; must add 1 on each written symbol
+                    int counterYD = 0; 
                     do
                     {
                         Console.Write(".");

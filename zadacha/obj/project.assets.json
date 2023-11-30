@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/miro/Projects/zadacha/zadacha/zadacha.csproj",
+      "projectUniqueName": "/Users/miro/Projects/Rhomb/zadacha/zadacha.csproj",
       "projectName": "zadacha",
-      "projectPath": "/Users/miro/Projects/zadacha/zadacha/zadacha.csproj",
+      "projectPath": "/Users/miro/Projects/Rhomb/zadacha/zadacha.csproj",
       "packagesPath": "/Users/miro/.nuget/packages/",
-      "outputPath": "/Users/miro/Projects/zadacha/zadacha/obj/",
+      "outputPath": "/Users/miro/Projects/Rhomb/zadacha/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/miro/.nuget/NuGet/NuGet.Config"
