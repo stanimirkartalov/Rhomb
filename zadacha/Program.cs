@@ -12,6 +12,9 @@ namespace Rhomb
             Console.Write("Enter a value: ");
             string num = Console.ReadLine();
             int n = int.Parse(num);
+
+            
+
             if (n % 2 == 0 & n >= 6 & n <= 80)
             {
                 //value is valid
@@ -21,116 +24,132 @@ namespace Rhomb
                 Console.WriteLine(n);
                 int counterX = 0;
 
+
                 //write upper half - line by line
                 do
                 {
                     //write dots on left
-                    int counterY = 0; 
-                    do
+                    int counterY = 0;
+                    while (counterY < midY)
                     {
                         Console.Write(".");
                         counterY++;
-                    } while (counterY < midY);
+                    } 
+                        
+                         
+                    int limit = n - counterY*2;
+                    double m = limit/ 2;
+                    for ( int k=0; k < limit; k++)
+                        {
+                        
+                            if (k < m)
+                            {
 
-                    //write 1 fwd slash and increase counter
-                    Console.Write("/");
-                    counterY++;
+                               
+                                if (k % 2 != 0)
+                                {
+                                    Console.Write(" ");
+                                }
+                                else
+                                {
+                                    Console.Write("/");
+                                }
+                            }
+                            else
+                            {
+                                if (k % 2 != 0)
+                                {
+                                    Console.Write("\\");
+                                }
+                                else
+                                {
+                                    Console.Write(" ");
+                                }
+                            }
+                        }
 
-                    //write as many spaces as needed in the middle
-                    int counterS = midY + 2;
-                    //counterS <= counterS + 2  --> always true
-                    while (counterS < n - midY)
-                    {
-                        Console.Write(" ");
-                        counterS++;
-                        //add to the cursor counter 1 for each simbol
-                        counterY++;
-                    }
+                    counterY = counterY + limit;
 
-                    //write bwrd slash and increase cursor - counterY
-                    Console.Write("\\");
-                    counterY++;
 
                     //write dots on the right
-                    do
+                    while (counterY < n)
                     {
                         Console.Write(".");
                         counterY++;
-                    } while (counterY < n);
+                    }
 
                     //increase space left to the middle part
                     midY--;
                     //go on next line
                     Console.WriteLine("");
                     counterX++;
-                } while (counterX < midX);
+                } while (counterX <= midX);
 
 
-                //write last line of upper half
-                Console.Write("/");
-                int i = 2;
-                while (i < n)
-                {
-                    Console.Write(" ");
-                    i++;
-                }
-                Console.Write("\\");
-                Console.WriteLine("");
-                counterX++; //add 1 to rows counter
-
-                //write first line of lower half
-                Console.Write("\\");
-                int j = 2;
-                while (j < n)
-                {
-                    Console.Write(" ");
-                    j++;
-                }
-                Console.Write("/");
-                Console.WriteLine("");
-                counterX++; //add 1 to rows counter
                 midY++;
-                //write lower half
+               
+       
                 do
                 {
-                    // test
-                    int counterYD = 0; 
-                    do
+                    int counterYD = 0;
+                    while (counterYD < midY)
                     {
                         Console.Write(".");
                         counterYD++;
-                    } while (counterYD < midY);
+                    } 
+                    
 
-                    Console.Write("\\");
-                    counterYD++;
-
-                    int counterSD = midY + 2;
-                    //counterS <= counterS + 2  --> always true
-                    while (counterSD < n - midY)
+                        int limit = n - counterYD * 2;
+                    double m = limit / 2;
+                    for (int k = 0; k < limit; k++)
                     {
-                        Console.Write(" ");
-                        counterSD++;
-                        //add to the cursor counter 1 for each simbol
-                        counterYD++;
+
+                        if (k < m)
+                        {
+
+                            
+                            if (k % 2 == 0)
+                            {
+                                Console.Write("\\");
+                            }
+                            else
+                            {
+                                Console.Write(" ");
+                            }
+                        }
+                        else
+                        {
+                            if (k % 2 == 0)
+                            {
+                                Console.Write(" ");
+                            }
+                            else
+                            {
+                                Console.Write("/");
+                            }
+                        }
                     }
 
-                    Console.Write("/");
-                    counterYD++;
+                    counterYD = counterYD + limit;
 
-                    do
+
+
+                   
+                    while (counterYD < n) 
                     {
                         Console.Write(".");
                         counterYD++;
-                    } while (counterYD < n);
-
+                    } 
+                    
                     midX++;
-                    int counterXD = n - midX;
+                    int counterXD = n - midX ;
                     Console.WriteLine("");
                     counterXD++;
                     counterX++; // add 1 to line counter
                     midY++;
-                } while (counterX <n);
-
+                    
+                } while (counterX < n);
+                
             }
 
             else
